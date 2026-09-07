@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #b23a3a; */
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+    padding: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.temple-header {
+    background-color: #4d4a4a;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 50%;
+}
+
+.temple-footer {
+    background-color: #4d4a4a;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 50%;
+}
+
+.title {
+    text-align: center;
+}
+
+.temple-info {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #DDDDDD;
+    border-radius: 5px;
+}
+
+.temple-main {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.temple-main-image {
+
+    width: 100%;
+
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, -4px -4px 39px 23px rgba(0, 0, 0, 0.06);
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, -4px -4px 39px 23px rgba(0, 0, 0, 0.06);
+}
+
+.temple-visit-info {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #DDDDDD;
+    border-radius: 5px;
+}

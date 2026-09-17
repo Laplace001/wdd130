@@ -13,24 +13,32 @@ main {
     width: 840px;
 }
 
-aside img {
+main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
+    /* margin: 1rem;
     border: 1px solid rgba(90 22 6 / 1);
     padding: 1rem;
     background-color: #eee;
-    color: #333;
+    color: #333; */
     text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 35px;
+    left: 35%;
 }
 
 footer {
@@ -42,4 +50,12 @@ footer {
 
 p {
     padding: 0;
+}
+
+/* class selector */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 8px solid grey;
+    background-color: #92cdb5;
 }

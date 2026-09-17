@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    /* Adds spacing so text doesn't touch the image */
+}
+
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    /* Adjust top spacing to position over your image */
+    left: 150px;
+    /* Adjust left spacing to position over your image */
+}

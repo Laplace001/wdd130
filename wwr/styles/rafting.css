@@ -41,11 +41,10 @@ header {
 
 header {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #f4f4f4;
-    padding: 1rem;
+    background-color: var(--nav-background-color);
+    padding: 1rem 2rem;
 }
 
 header img {
@@ -260,17 +259,15 @@ footer > p {
 }
 
 .form-group {
-    margin-bottom: 18px;
+    margin-bottom: 1.5rem;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
     font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
 }
 
 input[type=text],

@@ -1,0 +1,48 @@
+
+header, footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+h1 {
+    text-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 20px auto;
+    border: 5px solid white; 
+    
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.5); 
+}
+
+
+.box {
+    background-color: #ddd; 
+    color: #222; 
+    width: 90%; 
+    max-width: 600px; 
+    margin: 30px auto; 
+    padding: 20px;
+    border: 1px solid #aaa; 
+    border-radius: 8px; 
+    
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+}
+
+
+.box h2 {
+    font-size: 1.5em;
+    color: #111;
+}

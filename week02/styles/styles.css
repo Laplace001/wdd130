@@ -1,0 +1,46 @@
+/* General image selector for the whole page */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Specific profile image style using main parent selector */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Limit the width of the main element */
+main {
+    max-width: 840px;
+}
+
+/* Paragraph padding adjustment */
+p {
+    padding: 0;
+}
+
+/* Aside element styling */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1.5rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Image inside the aside element */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem 0;
+}

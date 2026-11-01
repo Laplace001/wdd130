@@ -1,46 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
 /* General image selector for the whole page */
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* Specific profile image style using main parent selector */
 main img {
-    width: 150px;
-    height: auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    /* Adds spacing so text doesn't touch the image */
 }
+
 
 /* Limit the width of the main element */
-main {
+/* main {
     max-width: 840px;
-}
+} */
 
 /* Paragraph padding adjustment */
-p {
+/* p {
     padding: 0;
-}
+} */
 
 /* Aside element styling */
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1.5rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    position: relative; /* REQUIRED so aside h2 can position itself relative to this box */
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;  /* Adjust this value based on your specific image layout */
+    left: 150px; /* Adjust this value based on your specific image layout */
 }
 
 /* Image inside the aside element */
-aside img {
+/* aside img {
     width: 200px;
     height: auto;
-}
+} */
 
 /* Footer styling */
-footer {
+/* footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem 0;
-}
+} */
+

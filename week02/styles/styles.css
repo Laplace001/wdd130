@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+nav {
+  display: flex;             /* Turns the navigation container into a flexbox */
+  justify-content: space-around; /* Distributes items horizontally with even spacing */
+  align-items: center;       /* Centers the items vertically within the bar */
+}
+
+nav a {
+  display: block;            /* Makes the anchor tags block elements */
+  padding: 10px 15px;        /* Adds padding around each link */
+  text-decoration: none;     /* Removes underlines */
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #f8fafc;
+    line-height: 1.5;
+    color: #0f172a;
+    padding: 1rem;
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -13,52 +33,112 @@
     color: #000;
 }
 
-/* General image selector for the whole page */
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #0b2d4b;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 10px;
+    margin-bottom: 1rem;
+}
+
+/* ---------- THE GRID (aside left + main right) ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
 
 /* Specific profile image style using main parent selector */
 main img {
     float: right;
     margin: 0 0 1rem 1rem;
-    /* Adds spacing so text doesn't touch the image */
 }
 
+/* ---------- MAIN ---------- */
+main {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1.8rem 1.8rem;
+    border: 1px solid #e9edf2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
 
-/* Limit the width of the main element */
-/* main {
-    max-width: 840px;
-} */
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #0b2d4b;
+}
 
-/* Paragraph padding adjustment */
-/* p {
-    padding: 0;
-} */
+main p {
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
 
-/* Aside element styling */
+/* ---------- ASIDE ---------- */
 aside {
-    position: relative; /* REQUIRED so aside h2 can position itself relative to this box */
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 1.4rem 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    border: 1px solid #e9edf2;
+    font-size: 0.95rem;
 }
 
 aside h2 {
-    position: absolute;
-    top: 47px;  /* Adjust this value based on your specific image layout */
-    left: 150px; /* Adjust this value based on your specific image layout */
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #0b2d4b;
+    border-left: 4px solid #3b82f6;
+    padding-left: 0.75rem;
 }
 
-/* Image inside the aside element */
-/* aside img {
-    width: 200px;
-    height: auto;
-} */
+aside ul {
+    list-style: none;
+    margin-top: 0.8rem;
+}
 
-/* Footer styling */
-/* footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+aside li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+aside li a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+aside li a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    border-top: 2px solid #e2e8f0;
+    padding: 1.2rem 0;
+    margin-top: 1rem;
     text-align: center;
-    padding: 1rem 0;
-} */
+    color: #475569;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
 
+footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

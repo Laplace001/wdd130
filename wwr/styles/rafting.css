@@ -19,14 +19,14 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes only the space it needs; nav takes the rest */
-    align-items: center;             /* Vertically centers the items */
-    gap: 20px;                       /* Adds space between the logo and nav */
-    padding: 20px;                   /* Adds breathing room around the header */
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
     background-color: var(--primary-color);
     width: 840px;
     margin: 0 auto;
-}  
+}
 
 header .logo-area img {
     display: block;
@@ -68,6 +68,55 @@ main {
     width: 840px;
     margin: 0 auto;
 }
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 16px 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 16px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
 
 h1,
 h2 {
@@ -75,7 +124,6 @@ h2 {
     color: var(--primary-color);
 }
 
-/* History Section */
 .history {
     padding: 20px;
 }
@@ -87,9 +135,9 @@ h2 {
 
 .history-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Creates three equal columns */
-    gap: 20px;                          /* Adds space between the columns */
-    align-items: center;                /* Vertically centers the text and image */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
 .history-content img {
@@ -97,7 +145,6 @@ h2 {
     height: auto;
 }
 
-/* Adventures Section */
 .adventures {
     padding: 20px;
 }
@@ -109,28 +156,27 @@ h2 {
 
 .adventure-grid {
     display: flex;
-    justify-content: space-between; /* Spreads the five items evenly across the row */
-    gap: 15px;                     /* Space between each figure */
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .adventure-grid figure {
-    flex: 1;                       /* Makes all figures share the space equally */
-    text-align: center;            /* Centers the caption text under the image */
-    margin: 0;                     /* Removes default figure margins */
+    flex: 1;
+    text-align: center;
+    margin: 0;
 }
 
 .adventure-grid img {
-    width: 100%;                   /* Makes image fill its container width */
-    height: auto;                  /* Keeps correct image proportions */
+    width: 100%;
+    height: auto;
     display: block;
 }
 
 .adventure-grid figcaption {
-    margin-top: 8px;               /* Adds spacing between image and text */
+    margin-top: 8px;
     font-size: 0.9rem;
 }
 
-/* Footer */
 footer {
     width: 840px;
     margin: 0 auto;
@@ -149,7 +195,7 @@ footer p {
 footer .socialmedia {
     display: flex;
     gap: 10px;
-    justify-content: flex-end; /* Centered or flex-end depending on design choice */
+    justify-content: flex-end;
 }
 
 footer .socialmedia a {

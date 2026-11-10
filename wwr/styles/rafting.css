@@ -117,8 +117,6 @@ h1 {
     width: 125px;
 }
 
-
-h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);

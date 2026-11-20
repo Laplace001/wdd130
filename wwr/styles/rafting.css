@@ -1,207 +1,328 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-    --primary-color: #055a05;
+    --primary-color: #d8c8f0;
     --accent1-color: #1a5276;
     --accent2-color: #333;
     --heading-font: 'Times New Roman', serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: var(--body-font);
+    line-height: 1.6;
     color: var(--accent2-color);
+    background-color: #fff;
+    padding: 20px;
 }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
 
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
     background-color: var(--primary-color);
-    width: 840px;
-    margin: 0 auto;
-}
-
-header .logo-area img {
-    display: block;
-    width: 80px;
-    height: auto;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    padding: 6px 10px;
-    border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-header nav a:hover,
-header nav a:focus-visible {
-    background-color: var(--accent1-color);
-    color: #fff;
-    text-decoration: underline;
-}
-
-header nav a[aria-current="page"] {
-    border-bottom: 2px solid #fff;
-}
-
-main {
-    width: 840px;
-    margin: 0 auto;
-}
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.hero {
-    position: relative;
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    margin: 16px 0;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 16px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-.history {
     padding: 20px;
-}
-
-.history h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
-.history-content img {
-    width: 100%;
-    height: auto;
-}
-
-.adventures {
-    padding: 20px;
-}
-
-.adventures h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.adventure-grid {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #bfaee6;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
-.adventure-grid figure {
-    flex: 1;
-    text-align: center;
-    margin: 0;
+.logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }
 
-.adventure-grid img {
-    width: 100%;
-    height: auto;
+.logo-icon {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #888;
+    position: relative;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    top: -10px;
+    right: -15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    background-color: #f0f0f0;
+    padding: 8px 25px;
+    border: 1px solid #999;
+    font-size: 0.9rem;
     display: block;
 }
 
-.adventure-grid figcaption {
-    margin-top: 8px;
+nav a:hover,
+nav a.active {
+    background-color: #ddd;
+}
+
+.company-info {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.company-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.company-info p {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+    color: #555;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 0 40px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.map-section {
+    flex: 1;
+    background-color: #e0e0e0;
+    min-height: 350px;
+    position: relative;
+    background-image:
+        linear-gradient(90deg, #fff 2px, transparent 2px),
+        linear-gradient(#fff 2px, transparent 2px);
+    background-size: 50px 50px;
+    border: 1px solid #ccc;
+}
+
+.map-pin {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 120px;
+    font-size: 0.9rem;
+    color: var(--accent2-color);
+    padding-right: 10px;
+}
+
+.form-control {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    font-family: inherit;
+}
+
+textarea.form-control {
+    height: 80px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.radio-option input {
+    margin-right: 8px;
+}
+
+.newsletter-check {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 15px 0;
+    justify-content: flex-end;
+}
+
+.newsletter-check input {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.submit-btn:hover {
+    background-color: #ccc;
+}
+
+
+.team-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.employees-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.employee-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.emp-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;       /* crops instead of stretching */
+    object-position: center; /* focuses on the face */
+    border-radius: 50%;      /* circle — or 4px for rounded square */
+    border: 2px solid #999;  /* matches your wireframe border */
+    background-color: #ccc;  /* shows while loading / if missing */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.employee-card p {
     font-size: 0.9rem;
 }
 
 footer {
-    width: 840px;
-    margin: 0 auto;
-    padding: 16px;
-    text-align: center;
     background-color: var(--primary-color);
-    color: #fff;
-}
-
-footer p {
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    border: 1px solid #999;
 }
 
 footer .socialmedia {
     display: flex;
+    flex-direction: column;   /* stack icons vertically */
+    align-items: center;      /* center each icon in the column */
     gap: 10px;
-    justify-content: flex-end;
+    margin-top: 10px;
 }
 
 footer .socialmedia a {
+    display: inline-flex;
     text-decoration: none;
+    line-height: 0;           /* removes extra space under the image */
 }
 
 footer .socialmedia img {
     display: block;
     width: 25px;
     height: 25px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+footer .socialmedia a:hover img,
+footer .socialmedia a:focus-visible img {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .employees-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-card {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+    }
 }

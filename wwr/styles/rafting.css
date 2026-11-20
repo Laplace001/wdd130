@@ -139,6 +139,9 @@ nav a.active {
     margin-top: -20px;
     margin-left: -10px;
 }
+iframe{
+    width:400px;
+}
 
 .form-section {
     flex: 1;
@@ -271,7 +274,7 @@ footer {
 
 footer .socialmedia {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* stack icons vertically */
     align-items: center;
     /* center each icon in the column */

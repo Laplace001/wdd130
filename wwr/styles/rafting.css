@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,7 +26,6 @@ body {
     border: 1px solid #ccc;
     padding-bottom: 20px;
 }
-
 
 header {
     background-color: var(--primary-color);
@@ -214,7 +212,6 @@ textarea.form-control {
     background-color: #ccc;
 }
 
-
 .team-section {
     background-color: #f4f4f4;
     padding: 20px;
@@ -240,14 +237,20 @@ textarea.form-control {
     align-items: center;
     width: 30%;
 }
+
 .emp-img {
     width: 100px;
     height: 100px;
-    object-fit: cover;       /* crops instead of stretching */
-    object-position: center; /* focuses on the face */
-    border-radius: 50%;      /* circle — or 4px for rounded square */
-    border: 2px solid #999;  /* matches your wireframe border */
-    background-color: #ccc;  /* shows while loading / if missing */
+    object-fit: cover;
+    /* crops instead of stretching */
+    object-position: center;
+    /* focuses on the face */
+    border-radius: 50%;
+    /* circle — or 4px for rounded square */
+    border: 2px solid #999;
+    /* matches your wireframe border */
+    background-color: #ccc;
+    /* shows while loading / if missing */
     margin-bottom: 10px;
     display: block;
 }
@@ -268,8 +271,10 @@ footer {
 
 footer .socialmedia {
     display: flex;
-    flex-direction: column;   /* stack icons vertically */
-    align-items: center;      /* center each icon in the column */
+    flex-direction: column;
+    /* stack icons vertically */
+    align-items: center;
+    /* center each icon in the column */
     gap: 10px;
     margin-top: 10px;
 }
@@ -277,7 +282,8 @@ footer .socialmedia {
 footer .socialmedia a {
     display: inline-flex;
     text-decoration: none;
-    line-height: 0;           /* removes extra space under the image */
+    line-height: 0;
+    /* removes extra space under the image */
 }
 
 footer .socialmedia img {
@@ -292,6 +298,7 @@ footer .socialmedia a:focus-visible img {
     transform: scale(1.15);
     opacity: 0.8;
 }
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
